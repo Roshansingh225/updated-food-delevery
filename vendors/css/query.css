@@ -1,0 +1,156 @@
+/* For very small screens (mobile) */
+@media only screen and (max-width: 480px) {
+    section {
+        padding: 25px 0;
+    }
+    .hero-text-box {
+        width: 90%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+    .nav {
+        float: none;
+        text-align: center;
+        margin-top: 20px;
+        display: none; /* Hide by default on small screens */
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.8); /* Add background for better visibility */
+        position: absolute;
+        top: 100px; /* Adjust based on logo height */
+        left: 0;
+        z-index: 1000;
+    }
+    .nav li {
+        display: block;
+        margin: 10px 0;
+        padding: 10px 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    .nav li:last-child {
+        border-bottom: none;
+    }
+    .nav li a:link,
+    .nav li a:visited {
+        padding: 0; /* Remove padding from links to fill the block */
+        display: block;
+    }
+    .mobile-nav-icon {
+        display: block; /* Show hamburger icon */
+    }
+    .logo {
+        margin-top: 10px; /* Adjust logo position for better alignment */
+        height: 80px;
+    }
+}
+
+/* For tablets and small laptops */
+@media only screen and (max-width: 767px) {
+    body {
+        font-size: 16px;
+    }
+    section {
+        padding: 30px 0;
+    }
+    .row,
+    .hero-text-box {
+        padding: 0 4%;
+    }
+    .col {
+        width: 100%;
+        margin: 0 0 4% 0;
+    }
+    .phone {
+        width: 70%;
+    }
+    .works-step div {
+        height: 40px;
+        width: 40px;
+        font-size: 120%;
+        margin-right: 15px;
+    }
+    
+    .boxc {
+        flex-direction: column;
+        align-items: center;
+    }
+    .col {
+        width: 100% !important;
+        margin: 0 0 20px 0;
+    }
+    .plan-box {
+        width: 90%;
+    }
+
+    /* Hide desktop nav and show mobile icon for tablets */
+    .nav {
+        display: none;
+        position: absolute;
+        top: 100px;
+        left: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        z-index: 1000;
+    }
+    .nav li {
+        display: block;
+        text-align: center;
+        margin: 0;
+        padding: 10px 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    .nav li:last-child {
+        border-bottom: none;
+    }
+    .nav li a:link,
+    .nav li a:visited {
+        display: block;
+        padding: 0;
+    }
+    .mobile-nav-icon {
+        display: block;
+    }
+    .logo {
+        margin-top: 10px;
+        height: 80px;
+    }
+}
+
+
+/* For mid-size screens */
+@media only screen and (max-width: 1023px) {
+    body {
+        font-size: 18px;
+    }
+    section {
+        padding: 60px 0;
+    }
+    .plan-box {
+        width: 100%;
+    }
+    /* Ensure desktop nav is visible on larger screens */
+    .nav {
+        display: block !important; /* Override display:none from smaller media queries */
+        position: static;
+        background-color: transparent;
+    }
+    .nav li {
+        display: inline-block;
+        border-bottom: none;
+        padding: 0;
+    }
+    .mobile-nav-icon {
+        display: none; /* Hide hamburger icon on larger screens */
+    }
+}
+
+/* For large but not full desktop */
+@media only screen and (max-width: 1200px) {
+    .hero-text-box {
+        width: 100%;
+        padding: 0 2%;
+    }
+    .row {
+        padding: 0 2%;
+    }
+}
