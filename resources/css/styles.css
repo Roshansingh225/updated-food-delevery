@@ -531,13 +531,12 @@ footer p{
 
 
 
-/* Add this to the end of styles.css */
 
 .mobile-nav-icon {
     float: right;
     margin-top: 60px;
     cursor: pointer;
-    display: none; /* Hidden by default, shown in media queries */
+    display: none; 
     color: white;
     font-size: 200%;
 }
@@ -546,7 +545,7 @@ footer p{
     vertical-align: middle;
 }
 
-/* When the nav is shown on mobile, make it block */
+
 .nav.open {
     display: block;
 }
